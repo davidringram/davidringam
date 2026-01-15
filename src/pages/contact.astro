@@ -1,9 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ContactForm from "../components/ContactForm.astro";
+import Notifications from "../components/Notifications.jsx";
 import { siteData, socialLinks, contactInfo } from "../data/siteData";
-import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg";
 ---
 
 <Layout
@@ -259,4 +258,5 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg";
       </div>
     </div>
   </section> -->
+  <Notifications client:idle />
 </Layout>

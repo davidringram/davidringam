@@ -3,10 +3,8 @@
 ---
 
 <form
+  id="contact-form"
   class="bg-dusty-olive-900 p-8 rounded-xl border border-dusty-olive-500 space-y-6"
-  name="contact"
-  method="POST"
-  data-netlify="true"
 >
   <div>
     <label for="name" class="block text-white font-semibold mb-2">
@@ -49,6 +47,17 @@
     />
   </div>
 
+  <div class="hidden" style="display:none;">
+    <label for="b_field">Don't fill this out if you're human</label>
+    <input
+      type="text"
+      name="b_field"
+      id="b_field"
+      tabindex="-1"
+      autocomplete="off"
+    />
+  </div>
+
   <div>
     <label for="message" class="block text-white font-semibold mb-2">
       Message
@@ -64,9 +73,57 @@
 
   <button
     type="submit"
-    class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+    class="w-full bg-brand-orange hover:bg-brand-orange text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
   >
     Send Message
     <i class="ri-send-plane-line"></i>
   </button>
 </form>
+
+<script>
+  // 1. Import the toast function
+  import { toast } from "sonner";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    // ... (rest of your setup code) ...
+
+    if (!form) return;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      // 2. Show a "Loading" toast
+      const toastId = toast.loading("Sending message...");
+
+      const formData = new FormData(form as HTMLFormElement);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const response = await fetch("/api/send-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          // 3. Update toast to Success
+          toast.success("Message sent successfully!", {
+            id: toastId, // Updates the existing loading toast
+            description: "We'll get back to you shortly.",
+          });
+          (form as HTMLFormElement).reset();
+        } else {
+          throw new Error("Failed");
+        }
+      } catch (error) {
+        // 4. Update toast to Error
+        toast.error("Failed to send message", {
+          id: toastId,
+          description: "Please try again later.",
+        });
+        console.error(error);
+      }
+    });
+  });
+</script>

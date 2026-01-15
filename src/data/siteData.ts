@@ -451,7 +451,7 @@ export const paymentOptions = {
   methods: ["Credit/Debit Cards", "Bank Transfer", "PayPal", "Apple Pay", "Google Pay"],
   plans: [
     { type: "Hourly", description: "Pay hourly for your services" },
-    { type: "Retainer", description: "Pay a retainer for monthly services" },
+    { type: "Retainer", description: "Pay a retainer for monthly " },
     { type: "By Project", description: "Pay for a specific project" },
   ],
   guarantee: "7-day money-back guarantee on all memberships",
