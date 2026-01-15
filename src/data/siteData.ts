@@ -366,7 +366,7 @@ export const tools = [
     specialization: "Customer Relationship Management",
     experience: "10+ years",
     bio: "At it's core, HubSpot is a Customer Relationship Management tool that can be used on it's free tier, or we could upgrade to a whole suite of tools to manage business and marketing.",
-    image: "https://www.hubspot.com/hs-fs/hubfs/leads%20captured%20from%20a%20form%20on%20hubspot.webp?width=540&name=leads%20captured%20from%20a%20form%20on%20hubspot.webp",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/hubspot.jpg",
     certifications: ["CRM", "Email Marketing", "Analytics"],
   },
   {
@@ -375,7 +375,7 @@ export const tools = [
     specialization: "Attribution and Reporting",
     experience: "13+ years",
     bio: "Google Marketing Suite is a comprehensive set of tools that helps businesses track and analyze their marketing campaigns and optimize their marketing strategies.",
-    image: "https://unito.io/wp-content/uploads/2023/11/image2.png",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/gmsuite.jpg",
     certifications: ["Analytics", "Tracking", "Attribution"],
   },
   {
@@ -384,7 +384,7 @@ export const tools = [
     specialization: "Digital Campaign Management",
     experience: "13+ years",
     bio: "From Google Ads to Facebook Ads, from programatic, to Geo-location, to AdRoll Remarketing, we effective target your audience and drive traffic to your website.",
-    image: "https://storage.googleapis.com/support-forums-api/attachment/thread-108780564-17623934576314322721.PNG",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/digads.jpg",
     certifications: ["Search Ads", "Display Ads", "Remarketing"],
   },
   {
@@ -393,7 +393,7 @@ export const tools = [
     specialization: "Design & Marketing",
     experience: "20+ years",
     bio: "With a background in design and marketing, we create engaging content that makes exercise enjoyable. Her classes are perfect for those who want to have fun while getting fit.",
-    image: "https://cloudfront.slrlounge.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-10-at-8.38.16-PM.png",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/adobe.jpg",
     certifications: ["Design", "Marketing", "Audio & Video"],
   },
   {
@@ -402,7 +402,7 @@ export const tools = [
     specialization: "Data Analysis",
     experience: "8+ years",
     bio: "We now have the ability to use advanced statistics and machine learning to analyze data and make informed decisions on your customers, campaigns, and business.",
-    image: "https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/python.jpg",
     certifications: ["Segmentation", "Analytics", "MDS"],
   },
 
