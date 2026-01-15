@@ -1,0 +1,57 @@
+---
+import { services } from "../data/siteData";
+---
+
+<section id="services" class="py-20 bg-loam-950">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-dusty-olive-500 mb-4">
+        Our Services
+      </h2>
+      <p class="text-xl text-bone-50 max-w-2xl mx-auto">
+        Find the perfect service for your business level and goals
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        services.map((serviceItem) => (
+          <div class="bg-loam-900 p-8 rounded-xl border border-dusty-olive-500 hover:border-brand-orange transition-all transform hover:scale-105">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="text-2xl font-bold text-white">{serviceItem.name}</h3>
+              <span class="bg-brand-orange text-white text-xs px-3 py-1 rounded-full font-semibold whitespace-nowrap">
+                {serviceItem.difficulty}
+              </span>
+            </div>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              {serviceItem.description}
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-bone-100 gap-2">
+                <i class="ri-time-line text-brand-orange" />
+                <span>{serviceItem.duration}</span>
+              </div>
+              <a
+                href="/contact"
+                class="text-brand-orange hover:text-brand-orange-400 font-semibold flex items-center gap-2"
+              >
+                Book Now
+                <i class="ri-arrow-right-line" />
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-16">
+      <a
+        href="/services"
+        class="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
+      >
+        View All Services
+        <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+  </div>
+</section>

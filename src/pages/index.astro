@@ -1,32 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import Statistics from '../components/Statistics.astro';
-import Features from '../components/Features.astro';
-import Facilities from '../components/Facilities.astro';
-import Classes from '../components/Classes.astro';
-import ClassSchedule from '../components/ClassSchedule.astro';
-import PricingPlans from '../components/PricingPlans.astro';
-import SuccessStories from '../components/SuccessStories.astro';
-import Testimonials from '../components/Testimonials.astro';
-import FAQ from '../components/FAQ.astro';
-import { siteData } from '../data/siteData';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Statistics from "../components/Statistics.astro";
+import Expertise from "../components/Expertise.astro";
+import IndustriesServed from "../components/IndustriesServed.astro";
+import Services from "../components/Services.astro";
+import ServiceSchedule from "../components/ServiceSchedule.astro";
+import PricingPlans from "../components/PricingPlans.astro";
+import SuccessStories from "../components/SuccessStories.astro";
+import Testimonials from "../components/Testimonials.astro";
+import FAQ from "../components/FAQ.astro";
+import { siteData } from "../data/siteData";
 ---
 
-<Layout title={`${siteData.name} - ${siteData.tagline}`} description={siteData.description}>
+<Layout
+  title={`${siteData.name} - ${siteData.tagline}`}
+  description={siteData.description}
+>
   <Hero />
   <Statistics />
-  <Features />
-  <Facilities />
-  <Classes />
-  <ClassSchedule />
+  <Expertise />
+  <IndustriesServed />
+  <Services />
+  <ServiceSchedule />
   <PricingPlans />
-  <SuccessStories />
-  <Testimonials />
+  <!-- <SuccessStories />
+  <Testimonials /> -->
   <FAQ />
-  
+
   <!-- CTA Section -->
-  <section class="py-20 bg-linear-to-r from-orange-500 to-orange-600">
+  <section
+    class="py-20 bg-linear-to-r from-burnt-orange-500 to-burnt-orange-600"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
         Ready to Transform Your Life?

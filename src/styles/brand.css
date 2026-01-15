@@ -1,0 +1,123 @@
+@theme {
+  /* =========================================
+     Color Palettes
+     ========================================= */
+
+  /* Spicy Paprika (Brand Orange) */
+  --color-burnt-orange-50: oklch(95.69% 0.017 35.34);
+  --color-burnt-orange-100: oklch(91.57% 0.035 39.98);
+  --color-burnt-orange-200: oklch(83.27% 0.072 39.23);
+  --color-burnt-orange-300: oklch(75.41% 0.112 39.38);
+  --color-burnt-orange-400: oklch(68.22% 0.153 39.14);
+  --color-burnt-orange-500: oklch(61.98% 0.187 37.44);
+  --color-burnt-orange-600: oklch(52.78% 0.158 37.67);
+  --color-burnt-orange-700: oklch(43% 0.125 37.90);
+  --color-burnt-orange-800: oklch(32.65% 0.089 38.19);
+  --color-burnt-orange-900: oklch(21.64% 0.051 40.04);
+  --color-burnt-orange-950: oklch(17.91% 0.038 43.07);
+
+  /* Dusty Olive (Brand Olive) */
+  --color-dusty-olive-50: oklch(96.45% 0.006 128.53);
+  --color-dusty-olive-100: oklch(93.07% 0.013 130.78);
+  --color-dusty-olive-200: oklch(86.04% 0.027 130.94);
+  --color-dusty-olive-300: oklch(78.88% 0.041 131.14);
+  --color-dusty-olive-400: oklch(71.39% 0.053 131.48);
+  --color-dusty-olive-500: oklch(63.96% 0.068 131.79);
+  --color-dusty-olive-600: oklch(54.42% 0.056 131.78);
+  --color-dusty-olive-700: oklch(44.68% 0.046 131.68);
+  --color-dusty-olive-800: oklch(34.13% 0.033 131.61);
+  --color-dusty-olive-900: oklch(22.66% 0.018 131.44);
+  --color-dusty-olive-950: oklch(19.02% 0.013 129.23);
+
+  /* Grey Olive (Brand Coyote) */
+  --color-coyote-50: oklch(96.41% 0.004 91.45);
+  --color-coyote-100: oklch(92.81% 0.007 88.64);
+  --color-coyote-200: oklch(85.49% 0.014 88.70);
+  --color-coyote-300: oklch(77.81% 0.021 84.59);
+  --color-coyote-400: oklch(70.16% 0.029 85.67);
+  --color-coyote-500: oklch(62.32% 0.037 86.28);
+  --color-coyote-600: oklch(53.06% 0.031 85.64);
+  --color-coyote-700: oklch(43.38% 0.024 84.54);
+  --color-coyote-800: oklch(33.37% 0.018 88.81);
+  --color-coyote-900: oklch(21.473% 0.01223 84.53);
+  --color-coyote-950: oklch(18.64% 0.008 95.48);
+
+  /* Loam (Brand Loam) */
+
+  --color-bone-50: oklch(92.97% 0.012 79.78);
+  --color-bone-100: oklch(85.62% 0.024 75.83);
+  --color-bone-200: oklch(78.36% 0.037 77.01);
+  --color-bone-300: oklch(70.83% 0.051 75.06);
+  --color-bone-400: oklch(63.33% 0.064 75.38);
+  --color-loam-500: oklch(53.87% 0.054 74.55);
+  --color-loam-600: oklch(44.12% 0.041 76.37);
+  --color-loam-700: oklch(33.64% 0.029 75.11);
+  --color-loam-800: oklch(22.52% 0.017 79.37);
+  --color-loam-900: oklch(20.52% 0.015 79.37);
+  --color-loam-950: oklch(18.817% 0.00131 0.001151);
+
+    /* stone */
+  --color-stone-50: oklch(96.36% 0.003 106.45);
+  --color-stone-100: oklch(92.43% 0.008 106.53);
+  --color-stone-200: oklch(84.76% 0.014 106.59);
+  --color-stone-300: oklch(76.88% 0.022 106.62);
+  --color-stone-400: oklch(68.88% 0.029 106.97);
+  --color-stone-500: oklch(60.64% 0.038 107.88);
+  --color-stone-600: oklch(51.72% 0.031 107.29);
+  --color-stone-700: oklch(42.36% 0.025 108.16);
+  --color-stone-800: oklch(32.48% 0.017 107.18);
+  --color-stone-900: oklch(21.73% 0.011 109.51);
+  --color-stone-950: oklch(18.33% 0.008 109.36);
+
+  /* Granite */
+  --color-granite-50: oklch(96.22% 0.003 219.53);
+  --color-granite-100: oklch(92.43% 0.008 228.86);
+  --color-granite-200: oklch(84.76% 0.014 226.59);
+  --color-granite-300: oklch(76.88% 0.022 227.62);
+  --color-granite-400: oklch(68.88% 0.029 226.97);
+  --color-granite-500: oklch(60.64% 0.038 227.88);
+  --color-granite-600: oklch(51.72% 0.031 227.29);
+  --color-granite-700: oklch(42.36% 0.025 228.16);
+  --color-granite-800: oklch(32.48% 0.017 227.18);
+  --color-granite-900: oklch(21.73% 0.011 229.51);
+  --color-granite-950: oklch(18.33% 0.008 229.36);
+
+
+  /* =========================================
+     Brand Identity Mappings
+     ========================================= */
+
+  /* Core Identity */
+  --color-brand-olive: var(--color-dusty-olive-500);
+  --color-brand-orange: var(--color-burnt-orange-500);
+  --color-brand-coyote: var(--color-coyote-500);
+  --color-brand-granite: var(--color-granite-600);
+
+  /* Surfaces */
+  --color-brand-loam: var(--color-loam-900); /* Darkest earth tone */
+  --color-brand-bone: var(--color-bone-50);  /* Lightest earth tone */
+
+
+  /* =========================================
+     Semantic Theme Mappings
+     ========================================= */
+  
+  /* Primary Action */
+  --color-primary: var(--color-brand-orange);
+  --color-primary-hover: var(--color-burnt-orange-600);
+  --color-primary-light: var(--color-burnt-orange-400);
+  
+  /* Backgrounds */
+  --color-bg-primary: var(--color-brand-loam);
+  --color-bg-secondary: var(--color-brand-bone);
+  --color-bg-tertiary: var(--color-brand-coyote);
+
+  /* Text */
+  --color-text-primary: var(--color-brand-bone);
+  --color-text-secondary: var(--color-brand-coyote);
+  --color-text-muted: var(--color-brand-coyote);
+
+  /* Borders */
+  --color-border-primary: var(--color-brand-coyote);
+  --color-border-accent: var(--color-brand-orange);
+}

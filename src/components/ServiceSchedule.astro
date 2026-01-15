@@ -1,0 +1,91 @@
+---
+import { serviceSchedule } from "../data/siteData";
+---
+
+<section id="schedule" class="py-20 bg-dusty-olive-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-coyote-300 mb-4">
+        Service Schedule
+      </h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+        We can work within your
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="bg-dusty-olive-950 rounded-xl border border-dusty-olive-600 overflow-hidden"
+      >
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-dusty-olive-900">
+              <tr>
+                <th
+                  class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider"
+                  >Time</th
+                >
+                <th
+                  class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider"
+                  >Service</th
+                >
+                <th
+                  class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider"
+                  >Tool</th
+                >
+                <th
+                  class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider"
+                  >Action</th
+                >
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-dusty-olive-700">
+              {
+                serviceSchedule.map((schedule) => (
+                  <tr class="hover:bg-dusty-olive-700/50 transition-colors">
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center gap-2">
+                        <i class="ri-time-line text-brand-orange" />
+                        <span class="text-white font-semibold">
+                          {schedule.time}
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <span class="text-white font-medium">
+                        {schedule.service}
+                      </span>
+                    </td>
+                    <td class="px-6 py-4">
+                      <span class="text-gray-400">{schedule.tool}</span>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a
+                        href="/contact"
+                        class="text-brand-orange hover:text-brand-orange-400 font-semibold flex items-center gap-2"
+                      >
+                        Start Service
+                        <i class="ri-arrow-right-line" />
+                      </a>
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-gray-400 mb-4">View the complete schedule</p>
+        <a
+          href="/services"
+          class="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
+        >
+          Full Schedule
+          <i class="ri-calendar-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
