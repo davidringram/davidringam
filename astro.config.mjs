@@ -12,6 +12,10 @@ export default defineConfig({
   // CHANGED: Use the Netlify adapter
   adapter: netlify(),
 
+  image: {
+    domains: ["img.perceptpixel.com", "images.unsplash.com"],
+  },
+
   integrations: [react()],
 
   vite: {
