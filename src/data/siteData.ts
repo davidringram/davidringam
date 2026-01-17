@@ -281,15 +281,11 @@ export const faqs = [
 ];
 
 export const serviceSchedule = [
-  { time: "Month over Month", service: "SEO/GEO/AEO", tool: "Various" },
-  { time: "Month over Month", service: "Search & Display Ads", tool: "Google/Meta" },
-  { time: "Month over Month", service: "Retargeting Ads", tool: "AdRoll/Google" },
-  { time: "Quarter", service: "Marketing Automation", tool: "HubSpot/N8N" },
-  { time: "Quarter", service: "MarTech Implementation", tool: "HubSpot" },
-  { time: "Quarter", service: "Segmentation & Personas", tool: "R & Python" },
-  { time: "Quarter", service: "Marketing Forecasting", tool: "R & Python" },
-  { time: "Quarter", service: "Content Marketing", tool: "Blogs/Videos" },
-  { time: "Quarter", service: "Conversion Rate Optimization", tool: "R & Python" },
+  { time: "Monday, 9 AM", service: "Local Service Weekly Masterclass", tool: "Marketing & Management" },
+  { time: "Monday, 1 PM", service: "Getting Local Leads from Google Search, LSA, & Google My Business", tool: "SEO & GMB" },
+  { time: "Tuesday, 11 AM", service: "Local Service Video Production, Content Marketing & Going Viral", tool: "Video & Content" },
+  { time: "Thursday, 1 PM", service: "Social Media Marketing for Local Business, Leveraging Paid & Organic", tool: "Social Media" },
+  { time: "Friday, 11 AM", service: "How Automation Can Help Your Local Service Business Thrive", tool: "Automation" },
 ];
 
 export const successStories = [
@@ -363,8 +359,8 @@ export const fullSchedule = {
 
 export const tools = [
   {
-    name: "HubSpot",
-    role: "Customer Management",
+    name: "Customer Relationship Management",
+    role: "Your last customer is your best customer",
     specialization: "Customer Relationship Management",
     experience: "10+ years",
     bio: "At it's core, HubSpot is a Customer Relationship Management tool that can be used on it's free tier, or we could upgrade to a whole suite of tools to manage business and marketing.",
@@ -372,8 +368,8 @@ export const tools = [
     certifications: ["CRM", "Email Marketing", "Analytics"],
   },
   {
-    name: "Google Marketing Suite",
-    role: "Analytics and Tracking",
+    name: "Analytics and Tracking",
+    role: "You can't management what you can't measure",
     specialization: "Attribution and Reporting",
     experience: "13+ years",
     bio: "Google Marketing Suite is a comprehensive set of tools that helps businesses track and analyze their marketing campaigns and optimize their marketing strategies.",
@@ -381,8 +377,8 @@ export const tools = [
     certifications: ["Analytics", "Tracking", "Attribution"],
   },
   {
-    name: "Digital Ads",
-    role: "Campaign Management",
+    name: "Campaign Management",
+    role: "Make your customers the hero of your stories. People will never forget how you made them feel.",
     specialization: "Digital Campaign Management",
     experience: "13+ years",
     bio: "From Google Ads to Facebook Ads, from programatic, to Geo-location, to AdRoll Remarketing, we effective target your audience and drive traffic to your website.",
@@ -390,8 +386,8 @@ export const tools = [
     certifications: ["Search Ads", "Display Ads", "Remarketing"],
   },
   {
-    name: "Adobe Creative Cloud",
-    role: "Design & Marketing",
+    name: "Creative Design",
+    role: "Creative with strategy is called 'advertising.' Creative without strategy is called 'art.',",
     specialization: "Design & Marketing",
     experience: "20+ years",
     bio: "With a background in design and marketing, we create engaging content that makes exercise enjoyable. Her classes are perfect for those who want to have fun while getting fit.",
@@ -399,8 +395,8 @@ export const tools = [
     certifications: ["Design", "Marketing", "Audio & Video"],
   },
   {
-    name: "Python & R",
-    role: "Data Analysis",
+    name: "Data Science and Machine Learning",
+    role: "Data science is a mix of three things: quantitative analysis, programming, and storytelling.",
     specialization: "Data Analysis",
     experience: "8+ years",
     bio: "We now have the ability to use advanced statistics and machine learning to analyze data and make informed decisions on your customers, campaigns, and business.",
@@ -413,44 +409,44 @@ export const tools = [
 export const history = [
   {
     year: "One",
-    title: "Initial Consultation",
+    title: "Start - Initial Consultation",
     description: "We start with a consultation to understand your needs and goals. We will discuss your current marketing efforts and identify areas for improvement.",
   },
   {
     year: "Two",
-    title: "Development",
+    title: "Prepare - Development",
     description: "We will develop a marketing plan that is tailored to your business and goals. We will use data and analytics to make informed decisions on your customers, campaigns, and business.",
   },
   {
     year: "Three",
-    title: "Review & KPIs",
+    title: "Align - Review & KPIs",
     description: "We will review the plan, align all departments and stakeholers, go over KPIs/OKRs, and ensure that all parties are heading the right direstion.",
   },
   {
     year: "Four",
-    title: "Implementation",
+    title: "Execute -Implementation",
     description: "We will implement the plan and monitor progress to ensure it is on track to achieving your goals and objectives.",
   },
   {
     year: "Five",
-    title: "Monitor & Initial Adjustments",
+    title: "Adjust - Monitor & Initial Adjustments",
     description: "We will monitor the plan and make any necessary adjustments to ensure it aligns with your goals and objectives.",
   },
   {
     year: "Six",
-    title: "Analytics and Reporting",
+    title: "Review - After Action Review",
     description: "We will analyze the data and provide you with a detailed report of your marketing efforts.",
   },
   {
     year: "Seven",
-    title: "Analyze & Optimize",
-    description: "From here all programs, services, and prokjects will enter the last phase, analyze and optimze, increasing lift and effectiveness.",
+    title: "Repeat - Analyze & Optimize",
+    description: "From here all programs, services, and projects will enter the last phase, analyze and optimze, increasing lift and effectiveness.",
   },
 
 ];
 
 export const paymentOptions = {
-  methods: ["Credit/Debit Cards", "Bank Transfer", "PayPal", "Apple Pay", "Google Pay"],
+  methods: ["Cash", "Check", "Money Order", "Zelle", "PayPal", "Venmo"],
   plans: [
     { type: "Hourly", description: "Pay hourly for your services" },
     { type: "Retainer", description: "Pay a retainer for monthly " },
