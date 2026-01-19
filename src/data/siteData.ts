@@ -320,11 +320,11 @@ export const successStories = [
 
 export const statistics = [
   { number: "15+", label: "Years Experience", icon: "ri-user-line" },
-  { number: "10+", label: "Brands Built", icon: "ri-user-star-line" },
-  { number: "800+", label: "Projects Completed", icon: "ri-calendar-check-line" },
-  { number: "30+", label: "Happy Clients", icon: "ri-line-chart-line" },
-  { number: "5000+", label: "cups of Coffee", icon: "ri-heart-line" },
-  { number: "5+", label: "Marketing Certifications", icon: "ri-award-line" },
+  { number: "12+", label: "Brands Built", icon: "ri-user-star-line" },
+  { number: "$2.6B+", label: "Revenue Growth", icon: "ri-calendar-check-line" },
+  { number: "34+", label: "Happy Clients", icon: "ri-line-chart-line" },
+  { number: "6500+", label: "cups of Coffee", icon: "ri-heart-line" },
+  { number: "11+", label: "Marketing Certifications", icon: "ri-award-line" },
 ];
 
 export const fullSchedule = {
