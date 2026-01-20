@@ -1,0 +1,56 @@
+---
+import { antiPortfolio } from "../data/siteData";
+---
+
+<section
+  id="anti-portfolio"
+  class="py-20 bg-dusty-olive-900 border-t border-dusty-olive-800"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-dusty-olive-50 mb-4">
+        What I do Not Do
+      </h2>
+      <p class="text-xl text-dusty-olive-50 max-w-2xl mx-auto">
+        Knowing who to hire, when, and for what reason is a skill in itself
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {
+        antiPortfolio.map((item) => (
+          <div class="bg-loam-900 p-8 rounded-xl border border-coyote-600 hover:border-brand-orange transition-all duration-300 group">
+            <div class="flex flex-col h-full">
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold text-dusty-olive-50 mb-1">
+                  {item.service}
+                </h3>
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-burnt-orange-500/50 text-burnt-orange-50 border border-burnt-orange-500/50">
+                  {item.role}
+                </span>
+              </div>
+
+              <p class="text-dusty-olive-50 mb-6 leading-relaxed grow">
+                {item.story}
+              </p>
+
+              <div class="pt-6 border-t border-coyote-600 mt-auto">
+                <div class="flex items-start gap-3">
+                  <i class="ri-lightbulb-flash-line text-brand-orange mt-1" />
+                  <div>
+                    <span class="text-xs uppercase tracking-wider text-dusty-olive-50 font-bold block mb-1">
+                      How I can Help You:
+                    </span>
+                    <p class="text-sm text-dusty-olive-50 italic">
+                      {item.lesson}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -68,24 +68,39 @@ export const expertise = [
     icon: "ri-fire-line",
   },
   {
-    title: "Marketing Operations",
-    description: "MarTech, AI, Automation, Campaign Management, Campaign Optimization",
+    title: "Operations",
+    description: "Hubspot, Salesforce, Zapier, APIs, Pixels, Events, CRM/ERP",
     icon: "ri-compass-line",
   },
   {
-    title: "Marketing Analytics",
-    description: "Data-Driven Marketing, Market Research, Forecasting, Campaign Analysis, and Campaign Reporting",
+    title: "Analytics",
+    description: "Python, R, Regression, GA4, Looker Studio, Forecasting, Data Visualization",
     icon: "ri-binoculars-line",
+  },
+  {
+    title: "Automation & AI",
+    description: "AI Agents, Marketing Automation, Win-Back, RAG & LLM",
+    icon: "ri-robot-2-line",
+  },
+  {
+    title: "Infrastructure",
+    description: "Astro, Tailwind, Alpine, Docker, DNS, Servers, Cloud, Security",
+    icon: "ri-tent-line",
+  },
+  {
+    title: "Research",
+    description: "Competitive Analysis, Market Research, Consumer Behavior, Product Development",
+    icon: "ri-microscope-line",
   },
   {
     title: "Digital Marketing",
     description: "Landing Pages, SEO, SEM, PPC, Email, Affiliate, Content, Video, Social Media Marketing",
-    icon: "ri-cloud-line",
+    icon: "ri-advertisement-line",
   },
   {
-    title: "Unconventional Marketing",
-    description: "Guerrilla, Stunt, Viral, Event, Experience, and Influencer Marketing",
-    icon: "ri-tent-line",
+    title: "Budgeting & Economics",
+    description: "Budget Management, Financial Modeling, Forecasting, Budget Optimization",
+    icon: "ri-calculator-line",
   },
 ];
 
@@ -197,36 +212,33 @@ export const services = [
 
 export const pricingPlans = [
   {
-    name: "By Hour",
+    name: "The Audit",
     price: "$300",
     period: "/Hour",
     features: [
       "For Coaching",
       "For Consulting",
       "For Small Issues",
-      "For Quick Questions",
     ],
     popular: false,
   },
   {
-    name: "Retainer",
+    name: "Fractional Retainer",
     price: "$3000",
     period: "/month",
     features: [
-      "Best Value",
-      "Priority Access",
-      "Continous Works",
+      "The Best Value",
+      "Set Working Hours",
       "Hollistic Marketing",
 
     ],
     popular: true,
   },
   {
-    name: "By Project",
+    name: "The Sprint",
     price: "As Quoted",
     period: "/project",
     features: [
-      "Help on Specific Projects",
       "Build Internal Systems",
       "Automate Workflows",
       "Clean Up Existing Systems",
@@ -235,24 +247,42 @@ export const pricingPlans = [
   },
 ];
 
-export const testimonials = [
+export const antiPortfolio = [
   {
-    name: "Sarah Johnson",
-    role: "Member for 2 years",
-    content: "FitZone has completely transformed my fitness journey. The trainers are amazing and the community is so supportive!",
-    rating: 5,
+    service: "Graphic Design, Video, and Photography",
+    role: "Instead, I define the Visual Identity",
+    story: "I do not design flyers, business cards, or do video production (unless there is a specific need). I can assist hiring a designer for you, but I do not push pixels.",
+    lesson: "I can help with idenity design, can assist in ordering, and collateral strategy.",
   },
   {
-    name: "Mike Chen",
-    role: "Member for 1 year",
-    content: "Best gym in town! The equipment is top-notch and the 24/7 access fits perfectly with my schedule.",
-    rating: 5,
+    service: "Social Media Management",
+    role: "Instead, I design the Content Strategy",
+    story: "I do not schedule posts, reply to DMs and reviews, or manage your community. I can assist in hiring and managing a social media and/or commuinity manager.",
+    lesson: "I can help with content creation, editorial calendar, and the content hub.",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Member for 6 months",
-    content: "I love the variety of classes offered. The HIIT sessions are intense but so rewarding. Highly recommend!",
-    rating: 5,
+    service: "IT & General Web Development",
+    role: "Instead, I engineer Conversion Engines",
+    story: "I build high-performance landing pages and funnels (with Astro). I do not build generic brochure sites, fix WordPress plugins, or act as IT support.",
+    lesson: "I can help design and plan, but will not build the website.",
+  },
+  {
+    service: "Sales Closing, ISA, & Intake",
+    role: "Instead, I generate the Demand",
+    story: "I deliver qualified leads to your doorstep. I do not pick up the phone and close the deal for you. I can enable your sales team, but I cannot replace them.",
+    lesson: "I can enable your sales team, help with the CRM, pipelines and KPIs.",
+  },
+  {
+    service: "Event Logistics & Trade Show Management",
+    role: "Instead, I design the Field Strategy",
+    story: "I define the ROI goals and messaging for your trade shows. I do not book the venue, order the catering, book hotels, or set up the booth.",
+    lesson: "I can help at the event, develop the the strategy, and promote it.",
+  },
+  {
+    service: "Public Relations & Media Relations",
+    role: "Instead, I build Brand Authority",
+    story: "I position you as a market leader. I do not send press releases to journalists or manage crisis communications when things go wrong.",
+    lesson: "I can help with technical SEO surrouding PR, and influencer marketing.",
   },
 ];
 
@@ -395,7 +425,7 @@ export const fullSchedule = {
 
 export const tools = [
   {
-    name: "Customer Relationship Management",
+    name: "Relationship Management",
     role: "Your last customer is your best customer",
     specialization: "Customer Relationship Management",
     experience: "10+ years",
@@ -405,7 +435,7 @@ export const tools = [
   },
   {
     name: "Analytics and Tracking",
-    role: "You can't management what you can't measure",
+    role: "You can't management what you don't measure",
     specialization: "Attribution and Reporting",
     experience: "13+ years",
     bio: "Google Marketing Suite is a comprehensive set of tools that helps businesses track and analyze their marketing campaigns and optimize their marketing strategies.",
@@ -422,13 +452,13 @@ export const tools = [
     certifications: ["Search Ads", "Display Ads", "Remarketing"],
   },
   {
-    name: "Creative Design",
-    role: "Creative with strategy is called 'advertising.' Creative without strategy is called 'art.',",
-    specialization: "Design & Marketing",
-    experience: "20+ years",
-    bio: "With a background in design and marketing, we create engaging content that makes exercise enjoyable. Her classes are perfect for those who want to have fun while getting fit.",
-    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/adobe.jpg",
-    certifications: ["Design", "Marketing", "Audio & Video"],
+    name: "Technical Infrastructure",
+    role: "Left unchecked, technical debt will ensure that the only work that gets done is unplanned work",
+    specialization: "Landing Pages and Conversion Optimization",
+    experience: "15+ years",
+    bio: "We use the latest tools and technologies to build landing pages and conversion optimization tools that work for your business, not create work for it.",
+    image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/astro.jpg",
+    certifications: ["Astro", "Tailwind", "Alpine.js"],
   },
   {
     name: "Data Science and Machine Learning",
@@ -437,7 +467,7 @@ export const tools = [
     experience: "8+ years",
     bio: "We now have the ability to use advanced statistics and machine learning to analyze data and make informed decisions on your customers, campaigns, and business.",
     image: "https://img.perceptpixel.com/cvsgntdr/DavidRIngram/python.jpg",
-    certifications: ["Segmentation", "Analytics", "MDS"],
+    certifications: ["Python", "R Lang", "Machine Learning"],
   },
 
 ];
@@ -445,38 +475,38 @@ export const tools = [
 export const history = [
   {
     year: "One",
-    title: "Start - Initial Consultation",
-    description: "We start with a consultation to understand your needs and goals. We will discuss your current marketing efforts and identify areas for improvement.",
+    title: "Initial Consultation",
+    description: "Action: We start with a consultation to understand your needs and goals. We will discuss your current marketing efforts and identify areas for improvement.",
   },
   {
     year: "Two",
-    title: "Prepare - Development",
-    description: "We will develop a marketing plan that is tailored to your business and goals. We will use data and analytics to make informed decisions on your customers, campaigns, and business.",
+    title: "Audit and Reconnaissance",
+    description: "Action: 30-day deep dive. We audit your data, interview your team, and expose the cracks in your revenue pipeline. Deliverable: The Situation Report (a comprehensive audit document).",
   },
   {
     year: "Three",
-    title: "Align - Review & KPIs",
-    description: "We will review the plan, align all departments and stakeholers, go over KPIs/OKRs, and ensure that all parties are heading the right direstion.",
+    title: "The Battle Plan & Strategy",
+    description: "Action: We define the GTM strategy, positioning, codify the plan, and create the 12-month roadmap. Deliverable: The Mission Brief (Strategy Deck).",
   },
   {
     year: "Four",
-    title: "Execute -Implementation",
-    description: "We will implement the plan and monitor progress to ensure it is on track to achieving your goals and objectives.",
+    title: "Execute and Implementation",
+    description: "Action: We implement the CRM, code the APIs, pipelines, and events, build the automations, and launch the new assets. Deliverable: Operational Capability (The systems go live).",
   },
   {
     year: "Five",
-    title: "Adjust - Monitor & Initial Adjustments",
-    description: "We will monitor the plan and make any necessary adjustments to ensure it aligns with your goals and objectives.",
+    title: "Monitor & Adjustments",
+    description: "Action: Monitor the plan and make any necessary adjustments to ensure it aligns with your goals and objectives. Deliverable: Adjusted Plan (Updated Strategy Deck).",
   },
   {
     year: "Six",
-    title: "Review - After Action Review",
-    description: "We will analyze the data and provide you with a detailed report of your marketing efforts.",
+    title: "After Action Review",
+    description: "Action: Analyze the data and provide you with a detailed report of your marketing efforts. Deliverable: After Action Review (Detailed Report).",
   },
   {
     year: "Seven",
-    title: "Repeat - Analyze & Optimize",
-    description: "From here all programs, services, and projects will enter the last phase, analyze and optimze, increasing lift and effectiveness.",
+    title: "Analyze & Optimize",
+    description: "Action: Analyze and optimize your marketing efforts to increase lift and effectiveness. Deliverable: Optimized Plan (Updated Strategy Plan).",
   },
 
 ];
@@ -484,8 +514,8 @@ export const history = [
 export const paymentOptions = {
   methods: ["Cash", "Check", "Money Order", "Zelle", "PayPal", "Venmo"],
   plans: [
-    { type: "Hourly", description: "Pay hourly for your services" },
-    { type: "Retainer", description: "Pay a retainer for monthly " },
+    { type: "Hourly", description: "Pay hourly for small projects" },
+    { type: "Retainer", description: "Best value & best support" },
     { type: "By Project", description: "Pay for a specific project" },
   ],
   guarantee: "7-day money-back guarantee on all memberships",

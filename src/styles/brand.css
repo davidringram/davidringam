@@ -56,19 +56,6 @@
   --color-loam-900: oklch(20.52% 0.015 79.37);
   --color-loam-950: oklch(18.817% 0.00131 0.001151);
 
-    /* stone */
-  --color-stone-50: oklch(96.36% 0.003 106.45);
-  --color-stone-100: oklch(92.43% 0.008 106.53);
-  --color-stone-200: oklch(84.76% 0.014 106.59);
-  --color-stone-300: oklch(76.88% 0.022 106.62);
-  --color-stone-400: oklch(68.88% 0.029 106.97);
-  --color-stone-500: oklch(60.64% 0.038 107.88);
-  --color-stone-600: oklch(51.72% 0.031 107.29);
-  --color-stone-700: oklch(42.36% 0.025 108.16);
-  --color-stone-800: oklch(32.48% 0.017 107.18);
-  --color-stone-900: oklch(21.73% 0.011 109.51);
-  --color-stone-950: oklch(18.33% 0.008 109.36);
-
   /* Granite */
   --color-granite-50: oklch(96.22% 0.003 219.53);
   --color-granite-100: oklch(92.43% 0.008 228.86);
