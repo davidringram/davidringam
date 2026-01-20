@@ -2,9 +2,9 @@ export const siteData = {
   name: "David R. Ingram, fCMO",
   tagline: "Navigate the Chaos. Scale with Precision",
   description: "Tactical Marketing for Strategic Growth. Data-Driven Command. Revenue-Focused Strategy.",
-  address: "Southern California",
+  address: "Riverside, California",
   phone: "+1 (951) 858-2320",
-  email: "davidingram.marketing@gmail.com",
+  email: "david@davidringram.com",
   social: {
     instagram: "https://www.instagram.com/davidingram.marketing/",
     linkedin: "https://www.linkedin.com/in/davidingrammkt/",
@@ -43,7 +43,7 @@ export const contactInfo = [
   {
     icon: "ri-time-line",
     title: "Hours",
-    content: ["Open 24/7 for Premium and Elite members", "Basic members: 5 AM - 11 PM daily"],
+    content: ["9:00 to 17:00 Monday - Friday"],
     link: null,
   },
 ];
