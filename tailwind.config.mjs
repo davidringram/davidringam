@@ -4,15 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          // The Core Identity
-          olive: '#5F7150',      // Primary Brand Color
-          orange: '#D94E1F',     // Main CTA / Action
-          coyote: '#B0A184',     // Subtle Accents / Borders
+        colors: {
+          brand: {
+            // Lightest (Background)
+            bone: 'var(--color-bone)',
 
-          // Surfaces
-          loam: '#2B2621',       // Dark backgrounds / Text
-          bone: '#F5F5F0',       // Light backgrounds
+            // Neutral / Utility (NEW)
+            mist: 'var(--color-mist)', // #93998e (Great for borders)
+
+            // Primary (The Core)
+            olive: 'var(--color-dusty-olive-600)',
+            'olive-dark': 'var(--color-dusty-olive-800)',
+
+            // Accents
+            orange: 'var(--color-fox-orange)',
+            gunmetal: 'var(--color-gunmetal)', // Tech/Metal
+            taupe: 'var(--color-taupe)',       // Earth/Sand
+
+            // Darkest (Text/Contrast)
+            loam: 'var(--color-loam)',
+          }
         }
       },
       fontFamily: {

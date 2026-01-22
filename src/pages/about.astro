@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import { siteData, tools, history } from "../data/siteData";
+import { siteData, credentials, history } from "../data/siteData";
 ---
 
 <Layout
@@ -18,8 +18,11 @@ import { siteData, tools, history } from "../data/siteData";
           About {siteData.name}
         </h1>
         <p class="text-xl text-stone-300">
-          We're dedicated to helping you achieve your business goals and have
-          better ROI
+          In a landscape defined by noise and saturation, hope is not a
+          strategy. My mission is to provide the strategic leadership and
+          technical infrastructure high-value businesses need to navigate the
+          chaos. We do not guess. We do not follow the herd. We map the terrain,
+          engineer the system, and crush the objective.
         </p>
       </div>
     </div>
@@ -30,134 +33,54 @@ import { siteData, tools, history } from "../data/siteData";
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-4xl font-bold text-white mb-8 text-center">
-          Our Mission
+          Our Mission : The Pathfinder
         </h2>
         <div class="prose prose-invert max-w-none">
           <p class="text-xl text-gray-300 mb-6">
-            At {siteData.name}, we believe that business success is not just
-            about numbers, but about effective and efficient strtategies that
-            have postive revenue impace. Our mission is to help local service
-            businesses grow and succeed.
+            Marketing is not just about creative ideas; it is about survival and
+            expansion in hostile territory. I have spent the last 15 years
+            operating at the intersection of <strong
+              >Brand Strategy, Data Science, Creative Design, and Revenue
+              Operations</strong
+            >.
+          </p>
+
+          <p class="text-xl text-gray-300 mb-6">
+            My approach to growth is forged from a lifetime of navigation. Long
+            before I was a Fractional CMO, I was learning to read the terrain.
+            As an Eagle Scout ('99), I learned that preparation prevents
+            failure. As an Infantryman in Operation Iraqi Freedom ('06-'09), I
+            learned that even the best plans change under fire, and that calm,
+            decisive leadership is the only way forward.
+          </p>
+          <p class="text-xl text-gray-300 mb-6">
+            Today, I deploy that same discipline for businesses in high-stakes
+            industries, from Legal and Medical to Manufacturing and SaaS. I
+            don't just hand you a map and wish you luck; I build the roads,
+            secure the supply lines, and lead the expedition.
           </p>
           <p class="text-lg text-gray-400 mb-6">
-            We provide full marketing services, from strategy to execution, to
-            help you achieve your business goals.
+            I am David R. Ingram. I am not just a marketer; I am your force
+            multiplier.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Values Section -->
+  <!-- Credentials Section -->
   <section class="py-20 bg-dusty-olive-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">
-        Our Values
+      <h2 class="text-4xl font-bold text-white mb-4 text-center">
+        Credentials
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div
-          class="bg-dusty-olive-800 p-8 rounded-xl border border-dusty-olive-500 text-center hover:border-brand-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-trophy-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Excellence</h3>
-          <p class="text-gray-400 leading-relaxed">
-            From the smallest job to the largest, we strive to provide the best
-            possible service.
-          </p>
-        </div>
-        <div
-          class="bg-dusty-olive-800 p-8 rounded-xl border border-dusty-olive-500 text-center hover:border-brand-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-hand-heart-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Execution</h3>
-          <p class="text-gray-400 leading-relaxed">
-            We execute our strategies with precision and efficiency to ensure
-            success.
-          </p>
-        </div>
-        <div
-          class="bg-dusty-olive-800 p-8 rounded-xl border border-dusty-olive-500 text-center hover:border-brand-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-focus-3-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Results</h3>
-          <p class="text-gray-400 leading-relaxed">
-            We focus on delivering real, measurable results for every
-            organization.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- History/Timeline Section -->
-  <section class="py-20 bg-loam-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">
-        Our Process
-      </h2>
-      <div class="max-w-4xl mx-auto">
-        <div class="relative">
-          <!-- Timeline Line -->
-          <div
-            class="absolute left-8 top-0 bottom-0 w-0.5 bg-orange-500/30 hidden md:block"
-          >
-          </div>
-
-          <div class="space-y-12">
-            {
-              history.map((milestone, index) => (
-                <div class="relative flex items-start gap-6">
-                  <div class="hidden md:block shrink-0">
-                    <div class="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center border-4 border-coyote-950">
-                      <span class="text-white font-bold text-sm">
-                        {milestone.year}
-                      </span>
-                    </div>
-                  </div>
-                  <div class="flex-1 bg-coyote-800 p-6 rounded-xl border border-coyote-400 hover:border-orange-500 transition-all">
-                    <div class="md:hidden mb-2">
-                      <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        {milestone.year}
-                      </span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">
-                      {milestone.title}
-                    </h3>
-                    <p class="text-gray-300 leading-relaxed">
-                      {milestone.description}
-                    </p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tools Section -->
-  <section class="py-20 bg-dusty-olive-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-4 text-center">Expertise</h2>
       <p class="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
-        I am an expert in marketing, sales, and business development.
+        A life-long learner and doer, I have accumulated a wealth of knowledge
+        and experience over the years.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8">
         {
-          tools.map((tool, index) => {
+          credentials.map((tool, index) => {
             let className = "";
             if (index + 1 == 4) {
               className = "lg:col-start-2";
@@ -179,13 +102,11 @@ import { siteData, tools, history } from "../data/siteData";
                       loading="lazy"
                     />
                   </div>
-                  <h3 class="text-xl font-bold text-white mb-2">{tool.name}</h3>
-                  <p class="text-orange-500 mb-1 font-semibold">{tool.role}</p>
-                  <p class="text-gray-400 text-sm mb-3">
-                    {tool.specialization}
-                  </p>
-                  <p class="text-bone-100 text-xs">
-                    {tool.experience} experience
+                  <h3 class="text-xl font-bold text-brand-bone mb-2">
+                    {tool.name}
+                  </h3>
+                  <p class="text-dusty-olive-300 mb-1 font-semibold">
+                    {tool.role}
                   </p>
                 </div>
                 <p class="text-bone-100 text-sm leading-relaxed mb-4 text-center">
@@ -202,6 +123,106 @@ import { siteData, tools, history } from "../data/siteData";
             );
           })
         }
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-20 bg-loam-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-bone-100 mb-12 text-center">
+        Our Values
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div
+          class="bg-loam-800 p-8 rounded-xl border border-loam-600 text-center hover:border-brand-orange-500 transition-all"
+        >
+          <div
+            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="ri-trophy-line text-4xl text-brand-orange-500"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-bone-100 mb-3">Excellence</h3>
+          <p class="text-bone-200 leading-relaxed">
+            From the smallest job to the largest, we strive to provide
+            exceptional service.
+          </p>
+        </div>
+        <div
+          class="bg-loam-800 p-8 rounded-xl border border-loam-600 text-center hover:border-brand-orange-500 transition-all"
+        >
+          <div
+            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="ri-hand-heart-line text-4xl text-brand-orange-500"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-bone-100 mb-3">Execution</h3>
+          <p class="text-bone-100 leading-relaxed">
+            We execute our strategies with precision and efficiency to ensure
+            succes and sustainability.
+          </p>
+        </div>
+        <div
+          class="bg-loam-800 p-8 rounded-xl border border-loam-600 text-center hover:border-brand-orange-500 transition-all"
+        >
+          <div
+            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="ri-focus-3-line text-4xl text-brand-orange-500"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-bone-100 mb-3">Results</h3>
+          <p class="text-bone-200 leading-relaxed">
+            We focus on delivering real, measurable results for every
+            organizations, not vanity metrics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History/Timeline Section -->
+  <section class="py-20 bg-dusty-olive-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-bone-100 mb-12 text-center">
+        Our Process
+      </h2>
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div
+            class="absolute left-8 top-0 bottom-0 w-0.5 bg-orange-500/30 hidden md:block"
+          >
+          </div>
+
+          <div class="space-y-12">
+            {
+              history.map((milestone, index) => (
+                <div class="relative flex items-start gap-6">
+                  <div class="hidden md:block shrink-0">
+                    <div class="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center border-4 border-loam-900">
+                      <span class="text-white font-bold text-sm">
+                        {milestone.year}
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-1 bg-dusty-olive-800 p-6 rounded-xl border border-loam-600 hover:border-brand-orange-500 transition-all">
+                    <div class="md:hidden mb-2">
+                      <span class="bg-orange-500 text-bone-100 px-3 py-1 rounded-full text-sm font-bold">
+                        {milestone.year}
+                      </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-bone-100 mb-2">
+                      {milestone.title}
+                    </h3>
+                    <p class="text-dusty-olive-200 leading-relaxed">
+                      {milestone.description}
+                    </p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
       </div>
     </div>
   </section>

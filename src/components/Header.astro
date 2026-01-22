@@ -1,5 +1,7 @@
 ---
 import { navigation, siteData } from "../data/siteData";
+import logo from "../assets/logo.png";
+import { Image } from "astro:assets";
 ---
 
 <header
@@ -13,7 +15,7 @@ import { navigation, siteData } from "../data/siteData";
           href="/"
           class="text-2xl font-bold text-brand-orange font-heading tracking-tight"
         >
-          {siteData.name}
+          <Image src={logo} alt="Logo" class="h-12 w-auto" />
         </a>
       </div>
 
