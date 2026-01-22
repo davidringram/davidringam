@@ -512,7 +512,7 @@ export const history = [
 ];
 
 export const paymentOptions = {
-  methods: ["Cash", "Check", "Money Order", "Zelle", "PayPal", "Venmo"],
+  methods: ["stripe", "Cash", "Check", "Zelle", "PayPal", "Venmo"],
   plans: [
     { type: "Hourly", description: "Pay hourly for small projects" },
     { type: "Retainer", description: "Best value & best support" },
