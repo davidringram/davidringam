@@ -512,13 +512,13 @@ export const history = [
 ];
 
 export const paymentOptions = {
-  methods: ["stripe", "Cash", "Check", "Zelle", "PayPal", "Venmo"],
+  methods: ["Stripe", "Cash", "Check", "Zelle", "PayPal", "Venmo"],
   plans: [
-    { type: "Hourly", description: "Pay hourly for small projects" },
-    { type: "Retainer", description: "Best value & best support" },
-    { type: "By Project", description: "Pay for a specific project" },
+    { type: "Hourly", description: "Pay hourly for small projects or quick questions" },
+    { type: "Retainer", description: "Best value & best support. Best for ongoing growth." },
+    { type: "By Project", description: "Pay for a specific project. Best for one-time projects." },
   ],
-  guarantee: "7-day money-back guarantee on all memberships",
-  trial: "Free 7-day trial available for new members",
+  guarantee: "Marketing is an investment, not an expense. I do not offer refunds. But I do back my work with a high atisfaction guarantee.",
+  trial: "Free consultations for all new clients",
 };
 
