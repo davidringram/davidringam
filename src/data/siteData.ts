@@ -321,28 +321,28 @@ export const industries = [
 
 export const faqs = [
   {
-    question: "Have you worked in my industry before?",
-    answer: "Yes, I have worked in many industries, including law, medical, real estate, financial services, services and trades, retail, and restaurants.",
+    question: "Do you have a prioritary framework for marketing?",
+    answer: "While it is a combination of many academics, thoughtleaders, and my own experiences, I have developed a framework that I believe is the best approach to local service marketing.",
   },
   {
-    question: "What should I bring to the meeting?",
+    question: "What should I bring to the first consultation?",
     answer: "Where your business currently is at, what are you goals for the next year and 5 years, what are your pain points, and what are your expectations.",
   },
   {
     question: "Do you have a retainer?",
-    answer: "I can work on a retainer basis, or by project or horly, although the retainer is the best value.",
+    answer: "I can, and oftem mostly, work on a retainer basis, I do offer pricing by project or horly, although the retainer is the best value.",
   },
   {
     question: "Do you work alone or with a team?",
-    answer: "I often work alone, integrating with your marketing team, but do have a team of contractors I can work with if needed.",
+    answer: "I often work alone, especially integrating with current marketing teams, but do have a team of contractors I can work with if needed.",
   },
   {
     question: "What are your operating hours?",
-    answer: "I am available 24/7, but I am most active from 9am to 5pm Monday through Friday.",
+    answer: "I am available 24/7 for retainer clients, but I am most active from 9am to 5pm Monday through Friday.",
   },
   {
     question: "Do you have a minimum project size?",
-    answer: "No, I can work on any size project.",
+    answer: "There are no minimums for project sizes, although small projects often do not have the value adn ROI we are aiming for.",
   },
 ];
 
