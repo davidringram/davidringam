@@ -1,3 +1,26 @@
+import gtmImage from '../assets/gtm.jpg';
+import brandImage from '../assets/brand.jpg';
+import econImage from '../assets/econ.jpg';
+import revopsImage from '../assets/revops.jpg';
+import autoImage from '../assets/auto.jpg';
+import demandImage from '../assets/demand.jpg';
+import guerImage from '../assets/guer.jpg';
+import engImage from '../assets/eng.jpg';
+import intelImage from '../assets/intel.jpg';
+
+import lawImage from '../assets/lawfirm.jpg';
+import medImage from '../assets/medical.jpg';
+import realImage from '../assets/realestate.jpg';
+import tradesImage from '../assets/construction.jpg';
+import retailImage from '../assets/retail.jpg';
+import financeImage from '../assets/finance.jpg';
+
+import cppImage from '../assets/cpp.jpg';
+import sunyImage from '../assets/suny.jpg';
+import armyUmage from '../assets/army.jpg';
+import bsaImage from '../assets/bsa.jpg';
+import kelloggImage from '../assets/kellogg.jpg';
+
 export const siteData = {
   name: "David R. Ingram, fCMO",
   tagline: "Navigate the Chaos. Scale with Precision",
@@ -110,8 +133,8 @@ export const services = [
     description: "Strategy Development, Customer Segmentation, Market Penetration",
     detailedDescription: "Develop a comprehensive marketing strategy that aligns with your business goals. Identify your target audience, penetrate the market, and create a roadmap for success.",
     duration: "One Quarter",
-    difficulty: " ",
-    image: "src/assets/gtm.jpg",
+    difficulty: "",
+    image: gtmImage,
     benefits: ["Launch with Precision", "Market Penetration", "Customer Segmentation", "Shorter Time-to-Revenue"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -122,7 +145,7 @@ export const services = [
     detailedDescription: "Develop your brand image and identity to create a cohesive and memorable brand that stands out from the competition.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/brand.jpg",
+    image: brandImage,
     benefits: ["Gain Brand Advocates", "Escape Commodity Trap", "Command Premium Pricing", "Stronger Brand Loyalty"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -134,7 +157,7 @@ export const services = [
     detailedDescription: "No longer wonder if your marketing it working for you, we will calculate ROAS, CAC, LTV, and profit margins.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/econ.jpg",
+    image: econImage,
     benefits: ["Marketing as Investment", "Optimze LTV/CAC", "Improve ROAS", "Eliminate Budget Bleed"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -146,7 +169,7 @@ export const services = [
     detailedDescription: "Implement marketing technology, AI, and automation tools to improve marketing efficiency and effectiveness.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/revops.jpg",
+    image: revopsImage,
     benefits: ["Single Source of Truth", "Plug the Leaks", "Automated Hygiene", "Sales Alignment"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -157,7 +180,7 @@ export const services = [
     detailedDescription: "Triple your marketing team with AI agents that work 24/7/365 to deliver results.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/auto.jpg",
+    image: autoImage,
     benefits: ["Scale Output, not Headcount", "24/7/365 Operations", "Eliminate Manual Toil", "Error-Free Execution"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -168,7 +191,7 @@ export const services = [
     detailedDescription: "We build and optimize marketing assets that drive results. From landing pages to technical SEO, to full API and Pixel integrations.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/eng.jpg",
+    image: engImage,
     benefits: ["High-Performance Architecture", "SEO Domincance", "Platform Ownership", "Seemless Intragrations"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -179,7 +202,7 @@ export const services = [
     detailedDescription: "Leverage data to drive decisions. We provide market analysis, customer segmentation, forecasting, and attribution modeling to optimize your marketing performance.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/intel.jpg",
+    image: intelImage,
     benefits: ["Decision Superiority", "Predictive Forecasting", "Competitive Recon", "Real-Time Visualizations"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -190,7 +213,7 @@ export const services = [
     detailedDescription: "Plan, build, implement, and mangage marketing campaigns and funnels that have low acquisiton costs, high return on ad spends, and valuable clients and customers.",
     duration: "One Quarter",
     difficulty: " ",
-    image: "src/assets/demand.jpg",
+    image: demandImage,
     benefits: ["Predictable Pipeline", "High-Intent Targeting", "Omnichannel Presence", "Automated Nurture"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -201,7 +224,7 @@ export const services = [
     detailedDescription: "Push the limit of marketing by creating moments that last with clients and consumers by leveraging unconvertional marketing tactics.",
     duration: "Unknown",
     difficulty: " ",
-    image: "src/assets/guer.jpg",
+    image: guerImage,
     benefits: ["Asymmetric Advantage", "Hyper-Local Impact", "Disruptive Presence", "High-Impact Storytelling"],
     tool: "David Ingram",
     whatToExpect: "Weekly Updates, Monthly Strategy Reviews",
@@ -290,32 +313,32 @@ export const industries = [
   {
     title: "Law Firms",
     description: "We help law firms and legal services, document prep, and more.",
-    image: "src/assets/lawfirm.jpg",
+    image: lawImage,
   },
   {
     title: "Medical Practices",
     description: "We help medical practices, health services, medspas, and more.",
-    image: "src/assets/medical.jpg",
+    image: medImage,
   },
   {
     title: "Real Estate",
     description: "We help real estate, property services, developers, and more.",
-    image: "src/assets/realestate.jpg",
+    image: realImage,
   },
   {
     title: "Financial Services",
     description: "We help financial services, banks, CPAs, advisors, brokers, and more.",
-    image: "src/assets/finance.jpg",
+    image: financeImage,
   },
   {
     title: "Services and Trades",
     description: "We help skilled trades, services, contractors, landscapers, and more.",
-    image: "src/assets/construction.jpg",
+    image: tradesImage,
   },
   {
     title: "Retail & Restaurants",
     description: "We help gyms, fitness centers, and multi-location retail, bars, restaurants.",
-    image: "src/assets/retail.jpg",
+    image: retailImage,
   },
 ];
 
@@ -430,7 +453,7 @@ export const credentials = [
     subtitle: "Hollistic business strategy, management, and leadership education.",
     experience: "2020",
     bio: "With a specialized focus on Business Strategy, Management, and Leadership, moving beyond simple tactics to understand the mechanics of organizational growth. This academic foundation ensures that every marketing initiative he proposes is financially sound and aligned with broader corporate objectives.",
-    image: "src/assets/cpp.jpg",
+    image: cppImage,
     certifications: ["Marketing", "Management", "Leadership"],
   },
   {
@@ -439,7 +462,7 @@ export const credentials = [
     subtitle: "Using data science to inform brand management methodologies.",
     experience: "2024",
     bio: "Bridging the gap between creative ideas and hard numbers, this Advanced Certificate in Marketing Analytics emphasizes data science methodologies. This qualification allows marketers to strip away guesswork, ensuring that campaign performance is rigorously tracked, measured, and optimized for ROI",
-    image: "src/assets/suny.jpg",
+    image: sunyImage,
     certifications: ["Branding", "Data Science", "Research"],
   },
   {
@@ -448,7 +471,7 @@ export const credentials = [
     subtitle: "The 'Gold Standard' of modern brand theory, AI, and digital marketing.",
     experience: "2026",
     bio: "Training at the Kellogg School of Management exposed me to the 'Gold Standard' of modern brand theory and digital strategy. By studying at one of the world’s premier marketing institutions, he brings a sophisticated, high-level perspective to brand positioning that is rarely found in freelance consultants.",
-    image: "src/assets/kellogg.jpg",
+    image: kelloggImage,
     certifications: ["Branding", "AI", "Automation", "Strategy"],
   },
   {
@@ -457,7 +480,7 @@ export const credentials = [
     subtitle: "Leadership under extreme pressure.",
     experience: "2006-2009",
     bio: "As an Infantryman during Operation Iraqi Freedom, I forged my leadership style in environments demanding immediate decision-making and absolute accountability. I translate this combat-tested discipline into the business world, executing mission-critical projects with a level of focus and resilience that standard corporate training cannot replicate",
-    image: "src/assets/army.jpg",
+    image: armyUmage,
     certifications: ["Leadership", "Accountability", "Decision-Making", "Pressure Testing"],
   },
   {
@@ -466,7 +489,7 @@ export const credentials = [
     subtitle: "The foundation of preparedness.",
     experience: "1999",
     bio: "Achieving the rank of Eagle Scout provided me with a lifelong foundation of preparedness, resourcefulness, and ethical leadership. This early commitment to 'being prepared' fundamentally shapes my consulting approach, ensuring that I anticipate challenges before they become crises.",
-    image: "src/assets/bsa.jpg",
+    image: bsaImage,
     certifications: ["Preparedness", "Resourcefulness", "Leadership", "Teamwork"],
   },
 
