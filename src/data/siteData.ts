@@ -9,12 +9,15 @@ import engImage from '../assets/eng.jpg';
 import intelImage from '../assets/intel.jpg';
 
 import rfrLogo from '../assets/brands/rfr-logo.png';
-import gaurdLogo from '../assets/brands/gaurd-logo.png';
+import gaurdLogo from '../assets/brands/gaurdian-logo.png';
 import aeriesLogo from '../assets/brands/aer-logo.png';
 import providentLogo from '../assets/brands/provident-logo.png';
 import socalLogo from '../assets/brands/scadv-logo.png';
 import garzaLogo from '../assets/brands/garza-logo.png';
 import love2liveLogo from '../assets/brands/love2live-logo.png';
+import haleLogo from '../assets/brands/hale-logo.png';
+import recellLogo from '../assets/brands/recell-logo.png';
+import showcaseLogo from '../assets/brands/showcase-logo.png';
 
 import lawImage from '../assets/lawfirm.jpg';
 import medImage from '../assets/medical.jpg';
@@ -416,12 +419,16 @@ export const successStories = [
 ];
 
 export const brands = [
-  { logoUrl: rfrLogo, name: "Reel Fathers Rights", vertical: "Family Law" },
-  { logoUrl: gaurdLogo, name: "Gaurd Legal Group", vertical: "Criminal Law" },
+  { logoUrl: rfrLogo, name: "Reel Fathers Rights APC", vertical: "Family Law" },
+  { logoUrl: gaurdLogo, name: "Guardian Defense Law Group", vertical: "Criminal Defense Law" },
   { logoUrl: aeriesLogo, name: "Aeries SIS", vertical: "SaaS, School Information System" },
   { logoUrl: providentLogo, name: "Provident Real Estate", vertical: "Real Estate" },
   { logoUrl: socalLogo, name: "SoCal Adventure Gear", vertical: "eCommerce" },
   { logoUrl: love2liveLogo, name: "Love2Live Printing", vertical: "Screen Printing and Branding Firm" },
+  { logoUrl: garzaLogo, name: "The Garza Podcast", vertical: "Podcast and Media Group" },
+  { logoUrl: haleLogo, name: "Hale Injury Law", vertical: "Personal Injury Law" },
+  { logoUrl: recellLogo, name: "Recellebrate", vertical: "Medical Practice & eCommerce" },
+  { logoUrl: showcaseLogo, name: "The Showcase Theatre Doc", vertical: "Documentary Film" },
 ];
 
 export const statistics = [

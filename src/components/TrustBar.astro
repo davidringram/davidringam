@@ -5,7 +5,7 @@ import { brands } from "../data/siteData";
 
 <section
   id="statistics"
-  class="py-20 bg-linear-to-br from-brand-loam via-brand-loam to-brand-loam"
+  class="py-20 bg-linear-to-br from-dusty-olive-900 via-dusty-olive-900 to-dusty-olive-900"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -17,7 +17,7 @@ import { brands } from "../data/siteData";
       </p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       {
         brands.map((brand) => (
           <div class="group bg-loam-950/50 backdrop-blur-sm p-4 rounded-xl border-2 border-brand-coyote/40 text-center transition-all duration-500 transform hover:scale-105 hover:border-brand-orange">
@@ -25,12 +25,12 @@ import { brands } from "../data/siteData";
               <Image
                 src={brand.logoUrl}
                 alt={`${brand.name} logo`}
-            /* ADDED: opacity-40 and brightness-75 to tame the white logos */
+            /* ADDED: opacity-40, brightness-75 */
             class="max-h-full max-w-full object-contain grayscale opacity-40 brightness-75 group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-500"
           />
             </div>
 
-            <div class="text-l font-bold text-brand-olive group-hover:text-brand-orange transition-colors duration-300">
+            <div class="text-xl font-bold text-brand-olive group-hover:text-brand-orange transition-colors duration-300">
               {brand.name}
             </div>
 
