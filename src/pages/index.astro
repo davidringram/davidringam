@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Statistics from "../components/Statistics.astro";
+import TrustBar from "../components/TrustBar.astro";
 import Expertise from "../components/Expertise.astro";
 import IndustriesServed from "../components/IndustriesServed.astro";
 import Services from "../components/Services.astro";
@@ -18,7 +19,8 @@ import { siteData } from "../data/siteData";
   description={siteData.description}
 >
   <Hero />
-  <Statistics />
+  <!--  <Statistics /> -->
+  <TrustBar />
   <Services />
   <IndustriesServed />
   <Expertise />
