@@ -381,11 +381,10 @@ export const faqs = [
 ];
 
 export const serviceSchedule = [
-  { time: "Monday, 9 AM", service: "Local Service Weekly Masterclass", tool: "Marketing & Management" },
-  { time: "Monday, 1 PM", service: "Getting Local Leads from Google Search, LSA, & Google My Business", tool: "SEO & GMB" },
-  { time: "Tuesday, 11 AM", service: "Local Service Video Production, Content Marketing & Going Viral", tool: "Video & Content" },
-  { time: "Thursday, 1 PM", service: "Social Media Marketing for Local Business, Leveraging Paid & Organic", tool: "Social Media" },
-  { time: "Friday, 11 AM", service: "How Automation Can Help Your Local Service Business Thrive", tool: "Automation" },
+  { time: "Monday, 11 AM", service: "Local Service Weekly Masterclass", tool: "Marketing & Management" },
+  /* { time: "Monday, 1 PM", service: "Getting Local Leads from Google Search, LSA, & Google My Business", tool: "SEO & GMB" }, */
+  /* { time: "Tuesday, 11 AM", service: "Local Service Video Production, Content Marketing & Going Viral", tool: "Video & Content" },*/
+  { time: "Thursday, 1 PM", service: "How Automation Can Help Your Local Service Business Thrive", tool: "Automation" },
 ];
 
 export const successStories = [
