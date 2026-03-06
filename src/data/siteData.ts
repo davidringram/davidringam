@@ -102,12 +102,12 @@ export const expertise = [
     icon: "ri-fire-line",
   },
   {
-    title: "Operations",
+    title: "Marketing Operations",
     description: "Hubspot, Salesforce, Zapier, APIs, Pixels, Events, CRM/ERP",
     icon: "ri-compass-line",
   },
   {
-    title: "Analytics",
+    title: "Data & Analytics",
     description: "Python, R, Regression, GA4, Looker Studio, Forecasting, Data Visualization",
     icon: "ri-binoculars-line",
   },
@@ -117,12 +117,12 @@ export const expertise = [
     icon: "ri-robot-2-line",
   },
   {
-    title: "Infrastructure",
+    title: "Marketing Engineering",
     description: "Astro, Tailwind, Alpine, Docker, DNS, Servers, Cloud, Security",
     icon: "ri-tent-line",
   },
   {
-    title: "Research",
+    title: "Marketing Research",
     description: "Competitive Analysis, Market Research, Consumer Behavior, Product Development",
     icon: "ri-microscope-line",
   },
@@ -132,7 +132,7 @@ export const expertise = [
     icon: "ri-advertisement-line",
   },
   {
-    title: "Budgeting & Economics",
+    title: "Economics & Budgeting",
     description: "Budget Management, Financial Modeling, Forecasting, Budget Optimization",
     icon: "ri-calculator-line",
   },
@@ -382,8 +382,8 @@ export const faqs = [
 
 export const serviceSchedule = [
   { time: "Monday, 11 AM", service: "Local Service Weekly Masterclass", tool: "Marketing & Management" },
-  /* { time: "Monday, 1 PM", service: "Getting Local Leads from Google Search, LSA, & Google My Business", tool: "SEO & GMB" }, */
-  /* { time: "Tuesday, 11 AM", service: "Local Service Video Production, Content Marketing & Going Viral", tool: "Video & Content" },*/
+  { time: "Tuesday, 1 PM", service: "Getting Local Leads from Google Search, LSA, & Google My Business", tool: "SEO & GMB" },
+  { time: "Wednesday, 11 AM", service: "Local Service Video Production, Content Marketing & Going Viral", tool: "Video & Content" },
   { time: "Thursday, 1 PM", service: "How Automation Can Help Your Local Service Business Thrive", tool: "Automation" },
 ];
 
