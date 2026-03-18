@@ -5,6 +5,7 @@ import react from '@astrojs/react';
 
 // CHANGED: Import Netlify instead of Node
 import netlify from '@astrojs/netlify';
+import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   output: 'server',
@@ -16,7 +17,24 @@ export default defineConfig({
     domains: ["img.perceptpixel.com", "images.unsplash.com"],
   },
 
-  integrations: [react()],
+  integrations: [
+    react(), 
+    partytown({
+      config: {
+        // Keeps these functions available in the main thread
+        forward: ['dataLayer.push', 'posthog.capture', 'posthog.init'],
+        // FIX: This function intercepts the blocked requests and proxies them
+        resolveUrl: function (url, location, type) {
+          if (type === 'script' && url.host !== location.host) {
+            var proxyUrl = new URL('https://cdn.builder.io/api/v1/proxy-api');
+            proxyUrl.searchParams.append('url', url.href);
+            return proxyUrl;
+          }
+          return url;
+        },
+      },
+    }),
+  ],
 
   vite: {
     plugins: [tailwindcss()]
