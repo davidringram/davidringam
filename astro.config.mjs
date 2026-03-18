@@ -23,6 +23,7 @@ export default defineConfig({
       config: {
         // Keeps these functions available in the main thread
         forward: ['dataLayer.push', 'posthog.capture', 'posthog.init'],
+        lib: '/~partytown',
         // FIX: This function intercepts the blocked requests and proxies them
         resolveUrl: function (url, location, type) {
           if (type === 'script' && url.host !== location.host) {
