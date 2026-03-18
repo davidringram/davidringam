@@ -5,9 +5,11 @@ export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
   try {
-    const apiKey = import.meta.env.RESEND_API_KEY;
+    // FIX: Switch from import.meta.env to process.env to satisfy Netlify Secrets Scan
+    const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
+      console.error("Environment Variable RESEND_API_KEY is missing on the server.");
       throw new Error("Missing API Key");
     }
 
