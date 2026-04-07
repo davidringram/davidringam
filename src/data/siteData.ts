@@ -246,13 +246,13 @@ export const services = [
 
 export const pricingPlans = [
   {
-    name: "The Audit",
-    price: "$300",
+    name: "Coaching",
+    price: "$275",
     period: "/Hour",
     features: [
-      "For Coaching",
-      "For Consulting",
-      "For Small Issues",
+      "Team Coaching",
+      "AI & AnalyticsCoaching",
+      "Marketing Plan Assistance"
     ],
     popular: false,
   },
@@ -262,7 +262,7 @@ export const pricingPlans = [
     period: "/month",
     features: [
       "The Best Value",
-      "Set Working Hours",
+      "From Plan to Exectution",
       "Hollistic Marketing",
 
     ],
